@@ -3,6 +3,11 @@ name = "rust_learning"
 version = "0.1.0"
 authors = ["caoyong <edencaox@gmail.com>"]
 
+[[bin]]
+
+name = "guess_number"
+path = "src/guessNumber.rs"
+
 [dependencies]
 
 rand = "0.5.5"
