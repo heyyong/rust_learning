@@ -4,10 +4,16 @@ version = "0.1.0"
 authors = ["caoyong <edencaox@gmail.com>"]
 
 [[bin]]
+name = "guess"
+path = "src/guess.rs"
 
-name = "guess_number"
-path = "src/guessNumber.rs"
+[[bin]]
+name = "mutable"
+path = "src/mutable.rs"
+
+[[bin]]
+name = "shadow"
+path = "src/shadowing.rs"
 
 [dependencies]
-
 rand = "0.5.5"
