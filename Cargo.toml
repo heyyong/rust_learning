@@ -47,5 +47,9 @@ path = "src/slice.rs"
 name = "struct"
 path = "src/struct.rs"
 
+[[bin]]
+name = "struct_ex"
+path = "src/struct_ex.rs"
+
 [dependencies]
 rand = "0.5.5"
