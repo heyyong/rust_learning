@@ -51,5 +51,9 @@ path = "src/struct.rs"
 name = "struct_ex"
 path = "src/struct_ex.rs"
 
+[[bin]]
+name = "impl"
+path = "src/impl.rs"
+
 [dependencies]
 rand = "0.5.5"
