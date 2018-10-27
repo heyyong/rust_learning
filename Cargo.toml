@@ -19,5 +19,9 @@ path = "src/shadowing.rs"
 name = "types"
 path = "src/type.rs"
 
+[[bin]]
+name = "fn"
+path = "src/fn.rs"
+
 [dependencies]
 rand = "0.5.5"
