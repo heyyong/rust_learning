@@ -23,5 +23,9 @@ path = "src/type.rs"
 name = "fn"
 path = "src/fn.rs"
 
+[[bin]]
+name = "condition"
+path = "src/condition.rs"
+
 [dependencies]
 rand = "0.5.5"
