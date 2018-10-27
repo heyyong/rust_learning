@@ -35,5 +35,9 @@ path = "src/loop.rs"
 name="owner"
 path = "src/owner.rs"
 
+[[bin]]
+name = "ref"
+path = "src/ref.rs"
+
 [dependencies]
 rand = "0.5.5"
