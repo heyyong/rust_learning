@@ -15,5 +15,9 @@ path = "src/mutable.rs"
 name = "shadow"
 path = "src/shadowing.rs"
 
+[[bin]]
+name = "types"
+path = "src/type.rs"
+
 [dependencies]
 rand = "0.5.5"
