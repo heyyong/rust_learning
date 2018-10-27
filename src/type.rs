@@ -23,4 +23,8 @@ fn main() {
   let (a, _b, _c) = tup;
   println!("{}", a);
   println!("{}", tup.1);
+
+  // arr
+  let arr = [1, 2, 3, 4, 5];
+  println!("{}", arr[0]);
 }
