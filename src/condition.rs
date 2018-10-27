@@ -8,4 +8,20 @@ fn main() {
   } else {
     println!("not condition");
   }
+
+  let condition = true;
+
+  let number = if condition {
+    5
+  } else {
+    6
+  };
+
+  println!("number is {}", number);
+
+  let number = {
+    19
+  };
+
+  println!("number is {}", number);
 }
