@@ -39,5 +39,9 @@ path = "src/owner.rs"
 name = "ref"
 path = "src/ref.rs"
 
+[[bin]]
+name = "slice"
+path = "src/slice.rs"
+
 [dependencies]
 rand = "0.5.5"
