@@ -59,5 +59,13 @@ path = "src/impl.rs"
 name = "enum"
 path = "src/enum.rs"
 
+[[bin]]
+name = "match"
+path = "src/match.rs"
+
+[[bin]]
+name = 'iflet'
+path = "src/iflet.rs"
+
 [dependencies]
 rand = "0.5.5"
