@@ -4,6 +4,12 @@ enum IpAddrKind {
   V6
 }
 
+impl IpAddrKind {
+  fn to_string() -> String {
+    "hello".to_string()
+  }
+}
+
 struct IpAddr {
   kind: IpAddrKind,
   address: String
@@ -22,6 +28,8 @@ fn main() {
     kind: IpAddrKind::V4,
     address: String::from("127.0.0.1")
   };
+
+  println!("{:?}", IpAddrKind::to_string());
 }
 
 fn route(op_type: IpAddrKind) { }
