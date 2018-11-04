@@ -67,5 +67,17 @@ path = "src/match.rs"
 name = 'iflet'
 path = "src/iflet.rs"
 
+[[bin]]
+name = "generics"
+path = "src/generics.rs"
+
+[[bin]]
+name = 'trait'
+path = "src/trait.rs"
+
+[[bin]]
+name = "article"
+path = "article.rs"
+
 [dependencies]
 rand = "0.5.5"
