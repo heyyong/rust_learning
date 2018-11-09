@@ -83,5 +83,9 @@ path = "src/cmd.rs"
 name = "read"
 path = "src/read.rs"
 
+[[bin]]
+name = "closure"
+path = "src/closure.rs"
+
 [dependencies]
 rand = "0.5.5"
