@@ -12,7 +12,7 @@ fn main() {
 }
 
 fn generate_workout(intensity: u32, random_number: u32) {
-    let expensive_closure = |num| {
+    let expensive_closure = |num: u32| -> u32 {
         println!("calculating slowly");
         thread::sleep(Duration::from_secs(2));
         num
