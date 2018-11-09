@@ -12,6 +12,8 @@ fn main() {
 }
 
 struct Cacher<T>
+    // here have three types of closure
+    // Fn: immutable borrow | FnOnce: transfer ownership | FnMut: mutable borrow
     where T: Fn(u32) -> u32
 {
     calculation: T,
