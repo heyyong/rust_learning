@@ -77,7 +77,15 @@ path = "src/trait.rs"
 
 [[bin]]
 name = "article"
-path = "article.rs"
+path = "src/article.rs"
+
+[[bin]]
+name = "cmd"
+path = "src/cmd.rs"
+
+[[bin]]
+name = "read"
+path = "src/read.rs"
 
 [dependencies]
 rand = "0.5.5"
