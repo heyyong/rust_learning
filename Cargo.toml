@@ -76,10 +76,6 @@ name = 'trait'
 path = "src/trait.rs"
 
 [[bin]]
-name = "article"
-path = "src/article.rs"
-
-[[bin]]
 name = "cmd"
 path = "src/cmd.rs"
 

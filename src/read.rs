@@ -6,7 +6,10 @@ use std::io::prelude::*;
 fn main() {
     let argvs: Vec<String> = env::args().collect();
     let config = Config::new(&argvs).unwrap();
-    run (config);
+
+    if let Err(e) = run(config) {
+        println!("Application error: {}", e);
+    }
 }
 
 fn run(config: Config) -> Result<(), Box<Error>> {
@@ -37,4 +40,34 @@ impl Config {
 
         Ok(Config { query, filename})
     }
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn one_result() {
+        let query = "duct";
+        let contents = "\
+        Rust:
+        safe, fast, productive.
+        Pick three";
+
+        assert_eq!(
+            vec!["save, fast, productive."],
+            search(query, contents)
+        );
+    }
+}
+
+pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+    let mut results = Vec::new();
+    for line in contents.lines() {
+        if line.contains(query) {
+            results.push(line);
+        }
+    }
+
+    results
 }
