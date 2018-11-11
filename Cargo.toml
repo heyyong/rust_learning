@@ -87,13 +87,5 @@ path = "src/read.rs"
 name = "closure"
 path = "src/closure.rs"
 
-[[bin]]
-name = "iter"
-path = "src/iter.rs"
-
-[[bin]]
-name = "iter_trait"
-path = "src/iter_trait.rs"
-
 [dependencies]
 rand = "0.5.5"
