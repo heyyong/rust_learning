@@ -91,5 +91,9 @@ path = "src/closure.rs"
 name = "box"
 path = "src/box.rs"
 
+[[bin]]
+name = "rc"
+path = "src/rc.rs"
+
 [dependencies]
 rand = "0.5.5"
