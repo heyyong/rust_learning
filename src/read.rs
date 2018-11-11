@@ -4,8 +4,7 @@ use std::fs::File;
 use std::io::prelude::*;
 
 fn main() {
-    let argvs: Vec<String> = env::args().collect();
-    let config = Config::new(&argvs).unwrap();
+    let config = Config::new(env::args()).unwrap();
 
     if let Err(e) = run(config) {
         println!("Application error: {}", e);
@@ -30,13 +29,17 @@ struct Config {
 }
 
 impl Config {
-    fn new(args: &[String]) -> Result<Config, &'static str> {
-        if args.len() < 2 {
-            return Err("not enough arguments");
-        }
+    fn new(mut args: env::Args) -> Result<Config, &'static str> {
 
-        let query = args[0].clone();
-        let filename = args[1].clone();
+        let query = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get a query string")
+        };
+
+        let filename = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get a file name")
+        };
 
         Ok(Config { query, filename})
     }
