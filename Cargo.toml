@@ -95,5 +95,9 @@ path = "src/box.rs"
 name = "rc"
 path = "src/rc.rs"
 
+[[bin]]
+name = "refcall"
+path = "src/refcall.rs"
+
 [dependencies]
 rand = "0.5.5"
