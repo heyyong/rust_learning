@@ -115,5 +115,9 @@ path = "src/multiple_thread.rs"
 name = "channel"
 path = "src/channel.rs"
 
+[[bin]]
+name = "share_memo"
+path = "src/shared_mem.rs"
+
 [dependencies]
 rand = "0.5.5"
