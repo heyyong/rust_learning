@@ -107,5 +107,9 @@ path = "src/cycle_ref.rs"
 name = "weak_ref"
 path = "src/weak_ref.rs"
 
+[[bin]]
+name = "multiple_thread"
+path = "src/multiple_thread.rs"
+
 [dependencies]
 rand = "0.5.5"
