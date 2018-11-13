@@ -103,5 +103,9 @@ path = "src/refcall.rs"
 name = "cycle_ref"
 path = "src/cycle_ref.rs"
 
+[[bin]]
+name = "weak_ref"
+path = "src/weak_ref.rs"
+
 [dependencies]
 rand = "0.5.5"
