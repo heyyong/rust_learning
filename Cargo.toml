@@ -99,5 +99,9 @@ path = "src/rc.rs"
 name = "refcall"
 path = "src/refcall.rs"
 
+[[bin]]
+name = "cycle_ref"
+path = "src/cycle_ref.rs"
+
 [dependencies]
 rand = "0.5.5"
