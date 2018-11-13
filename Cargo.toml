@@ -111,5 +111,9 @@ path = "src/weak_ref.rs"
 name = "multiple_thread"
 path = "src/multiple_thread.rs"
 
+[[bin]]
+name = "channel"
+path = "src/channel.rs"
+
 [dependencies]
 rand = "0.5.5"
