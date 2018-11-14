@@ -119,5 +119,9 @@ path = "src/channel.rs"
 name = "share_memo"
 path = "src/shared_mem.rs"
 
+[[bin]]
+name = "blog"
+path = "src/blog.rs"
+
 [dependencies]
 rand = "0.5.5"
